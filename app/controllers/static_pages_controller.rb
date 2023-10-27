@@ -4,10 +4,7 @@ class StaticPagesController < ApplicationController
 
   def help
   end
-<<<<<<< HEAD
 
   def about
   end
-=======
->>>>>>> refs/remotes/origin/static-pages
 end

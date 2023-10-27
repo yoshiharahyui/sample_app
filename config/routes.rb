@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
+  root "static_pages#home"
   get 'static_pages/home'
   get 'static_pages/help'
-<<<<<<< HEAD
   get  "static_pages/about"
-=======
->>>>>>> refs/remotes/origin/static-pages
-  root "application#hello"
 end
