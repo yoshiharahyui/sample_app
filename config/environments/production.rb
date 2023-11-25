@@ -69,7 +69,7 @@ Rails.application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = 'http://127.0.0.1:3000/.onrender.com'
+  host = 'https://sample-app-j38e.onrender.com'
   config.action_mailer.default_url_options = { host: host }
   config.action_mailer.smtp_settings = {
     :port           => 587,
