@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.2.2"
 
 gem "rails",           "7.0.4.3"
+gem "image_processing",           "1.12.2"
 gem "active_storage_validations", "0.9.8"
 gem "bcrypt",          "3.1.18"
 gem "faker",           "2.21.0"
@@ -38,6 +39,10 @@ group :test do
   gem "minitest-reporters",       "1.6.0"
   gem "guard",                    "2.18.0"
   gem "guard-minitest",           "2.4.6"
+end
+
+group :production do
+  gem "aws-sdk-s3", "1.114.0", require: false
 end
 
 group :production do
